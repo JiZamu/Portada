@@ -1,0 +1,62 @@
+body{
+    background: url(../img/fondo.jpg), #000;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+image{
+    max-width: 100%;
+}
+
+
+
+.indie{
+    font-family: 'Indie Flower', cursive;
+    color: #E74C3C;
+}
+
+.lobster{
+    font-family: 'Lobster', cursive;
+    color: #2980B9;
+}
+
+.espera1{
+    animation-delay: 1s;
+}
+
+.espera2{
+    animation-delay: 1.5s;
+}
+
+.centered {
+    float: none;
+}
+
+.espacio_sup{
+    padding-top: 100px;
+}
+
+.espacion_vert{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.espacio_hor{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#particles-js{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, .8);
+}
+
+.mediana{
+  width: 140px; height: 140px;
+}
+
+.c-blanco{
+    color: #ECF0F1;
+}

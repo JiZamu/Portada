@@ -1,0 +1,1 @@
+particulos.js
