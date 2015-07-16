@@ -4,34 +4,79 @@
         <title>Eduardo Jimenez Z</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'/>
-        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'> 
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/onepage-scroll.css" rel="stylesheet" type="text/css"/>
         <link href="css/main.css" rel="stylesheet" type="text/css"/>
         <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata:700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Orbitron:900' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+        
+        <script type="text/javascript">
+        $(document).ready(function() {
+$(".main").onepage_scroll({
+   sectionContainer: "section", 
+   easing: "ease",
+   animationTime: 1000,
+   pagination: true,
+   updateURL: false
+});
+
+$("#v1").on('click', function(){
+  $(".main").moveTo(2);
+});
+
+$("#v2").on('click', function(){
+  $(".main").moveTo(3);
+});
+
+$("#v3").on('click', function(){
+  $(".main").moveTo(4);
+});
+
+
+});
+        </script>
     </head>
     <body>
-    <div id="particles-js"></div>
 
+    <div class="main">
+      <section class="fondo-uni">
+      <div id="particles-js"></div>
     <div class="col-md-12 center-block centered text-center">
         <header>
             <figure class="espacio_sup">
                 <img class="img-rounded mediana" src="img/persona.jpg" alt="Eduardo Jimenez"/>
             </figure>
             <hgroup class="espacio_hor">
-                <h1 class="zoomInLef animated bounceInDown lobster c-blanco">Eduardo Jimenez</h1>
+                <h1 class="zoomInLef animated bounceInDown lobster c-blanco">3du4rd0 J1m3n3z</h1>
                 <h2 class=" indie animated bounceIn espera1">Desarrollador</h2>
             </hgroup>
         </header>
-        <nav class="animated bounceInUp espera2">
-            <a class="espacion_vert" href="#">Contacto</a>
-            <a class="espacion_vert" href="#">Servicios</a>
-            <a class="espacion_vert" href="#">Acerca de</a>
+        <div>
+            <nav class="animated bounceInUp espera2">
+            <a class="espacion_vert" id="v1">Contacto</a>
+            <a class="espacion_vert" id="v2">Servicios</a>
+            <a class="espacion_vert" id="v3">Acerca de</a>
         </nav>
         </div>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="js/particles.min.js"></script>
-        <script src="particulas.js"></script
+    </div>
+      </section>
+      <section>
+        Pahina 2
+      </section>
 
+      <section>
+        Pagina 3
+      </section>
+
+      <section>
+        Pagina 4
+
+      </section>
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script src="particulas.js"></script>
+    </div>
     </body>
 </html>
